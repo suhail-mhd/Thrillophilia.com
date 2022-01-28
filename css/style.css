@@ -1,0 +1,811 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style: none;
+
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-img img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.media-img img {
+    display: none;
+}
+
+/* navbar */
+
+nav {
+    z-index: 2;
+    border-bottom: 1px solid #a0a0a0;
+}
+
+.navbar-brand img {
+    width: 180px;
+}
+
+nav form .form-control {
+    background: transparent;
+    font-size: 12px;
+    border: none;
+    width: 300px;
+}
+
+nav form .form-control:focus {
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+}
+
+form i {
+    font-size: 20px;
+}
+
+.nav-link {
+    font-size: 12px;
+}
+
+.nav-item span {
+    position: absolute;
+    transform: translateX(-60px);
+    margin-top: -8px;
+    font-size: 9px;
+    background: #ff5300;
+    padding: 2px 5px;
+}
+
+.nav-item i {
+    font-size: 25px;
+    position: absolute;
+    transform: translateX(-30px);
+    margin-top: -5px;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.nav-list {
+    display: none;
+}
+
+.nav-list .close-btn {
+    display: none;
+}
+
+/* showcase */
+
+.showcase {
+    position: relative;
+    z-index: 1;
+    margin-top: 90px;
+}
+
+.showcase-text h1 {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.showcase-text h1 span {
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.showcase .selectors, .showcase form {
+    justify-content: center;
+}
+
+.selectors {
+    width: 55%;
+    height: 40px;
+    position: absolute;
+    transform: translateX(15em);
+    margin-top: 40px;
+    overflow: hidden;
+    background: rgba(51, 51, 51);
+    border-radius: 10px;
+}
+
+.selector-field {
+    border-radius: 20px;
+}
+
+.selectors a {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 13px;
+    transition: .3s;
+}
+
+.selectors li {
+    border-right: 1px solid #f4f4f4;
+
+}
+
+.selectors li:last-child {
+    border: none;
+}
+
+.selectors a:hover {
+    background-color: #ff5300;
+}
+
+.selectors a.active {
+    background-color: #ff5300;
+}
+
+.selectors i {
+    font-size: 20px;
+    /* margin-top: 50px; */
+}
+
+.showcase form .form-control {
+    position: relative;
+    font-size: 20px;
+    border: none;
+    width: 900px;
+    height: 50px;
+    margin-top: 80px;
+}
+
+.showcase form i {
+    position: absolute;
+    color: #333;
+    margin-top: 90px;
+    transform: translateX(26rem);
+}
+
+.hero-bottom-text {
+    position: relative;
+    color: #f4f4f4;
+    transform: translateY(5rem);
+
+}
+
+.hero-bottom-text .items {
+    cursor: pointer;
+}
+
+.hero-bottom-text .items {
+    opacity: .8;
+}
+
+.hero-bottom-text .items:hover {
+    opacity: 1;
+}
+
+.hero-bottom-text i {
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.hero-bottom-text p {
+    line-height: .6px;
+    font-size: 12px;
+    transform: translateY(20px);
+}
+
+/* escape */
+
+.escape {
+    margin: 80px 0;    
+}
+.escape .text {
+    position: relative;
+}
+.escape h2 {
+    position: relative;
+    color: #3a3a3a;
+    position: relative;
+    font-weight: 600;
+}
+.escape h2::after {
+    background-color: #ff5300;
+    position: absolute;
+    content: '';
+    width: 70px;
+    height: 2px;
+    margin-top: 50px;
+    left: 0;
+}
+.escape p {
+    color: #949494;
+    margin-top: 30px;
+}
+.escape img {
+    border-radius: 20px;
+    margin: 10px 5px;
+    transition: .5s;
+}
+.escape img:hover {
+    transform: translateY(-10px);
+}
+
+/* package */
+.booking {
+    position: relative;
+}
+.package img {
+    position: relative;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+.package-text {
+    position: absolute;
+    margin-top: -27rem;
+    transform: translateX(5rem);
+    line-height: .9;
+}
+.package-text .percentage-rate {
+    font-weight: bold;
+}
+.package-text .upto {
+    font-size: 3rem;
+    font-weight: 600;
+}
+.package-text .rate-of-percentage {
+    font-size: 12rem;
+    font-weight: bold;
+}
+.package-text .percentage-sign {
+    font-size: 5rem;
+}
+.package-text .off-text {
+    font-size: 3rem;
+}
+.package-text .holiday {
+    font-size: 30px;
+    font-weight: bold;
+    color: #f4f4f4;
+    letter-spacing: 3.84px;
+}
+.places img {
+    width: 150px;
+    height: 230px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    transition: .3s;
+}
+.places img:hover {
+    transform: translateY(-10px);
+}
+.places .img-2, .places .img-4, .places .img-7, .places .img-8 {
+    height: 150px;
+}
+.place-details {
+    position: relative;
+    text-align: center;
+
+} 
+.package .places .name {
+    position: absolute;
+    top: 0;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+}
+.places .img-5 {
+    margin-top: -5rem;
+}
+.places .img-7, .places .img-8 {
+    margin-top: -5rem;
+}
+.places .view-btn {
+    background-color: #ff5300;
+    border-radius: 6px;
+    padding: 8px;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+    height: 30px;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+    border: 2px solid transparent;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+    width: 140px;
+}
+.places .view-btn:hover {
+    background-color: transparent;
+    color: #ff5300;border: 2px solid #ff5300;
+
+}
+
+/* slider */
+
+.slider {
+    margin: 50px 0;
+}
+.slider img {
+    border-radius: 10px;
+}
+
+/* paradise */
+
+.paradise h2 {
+    position: relative;
+    color: #3a3a3a;
+    position: relative;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.paradise h2::after {
+    background-color: #ff5300;
+    position: absolute;
+    content: '';
+    width: 70px;
+    height: 2px;
+    margin-top: 50px;
+    transform: translateX(-11rem);
+}
+.paradise-card {
+    position: relative;
+}
+.package-text {
+    position: relative;
+}
+.paradise-text h6 {
+    position: relative;
+    color: #3a3a3a;
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+.paradise-text h6::after {
+    background-color: #ff5300;
+    position: absolute;
+    content: '';
+    width: 35px;
+    height: 2px;
+    margin-top: 30px;
+    left: 0;
+}
+.paradise-img img {
+    width: 250px;
+    height: 200px;
+}
+.paradise-list ul {
+    left: 0;
+}
+.paradise-list a {
+    text-decoration: none;
+    color: #949494;
+    font-size: 14px;
+}
+.paradise-list a:hover {
+    color: #ff5300;
+}
+
+/* gift */
+
+.gift h2 {
+    position: relative;
+    color: #3a3a3a;
+    position: relative;
+    font-weight: 600;
+}
+.gift p {
+    color: #949494;
+}
+.gift .view-btn {
+    background-color: #ff5300;
+    border-radius: 6px;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+    height: 30px;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+    border: 2px solid transparent;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+    width: 140px;
+    transform: translateX(6rem);
+}
+.gift .view-btn:hover {
+    background-color: transparent;
+    color: #ff5300;border: 2px solid #ff5300;
+
+}
+
+/* footer */
+
+footer {
+    background-color: #2e343d;
+    width: 100%;
+    padding: 50px 0;
+}
+.foot-logo img {
+    width: 180px;
+}
+footer a {
+    text-decoration: none;
+}
+footer i {
+    color: #2e343d;
+    background-color: #a0a0a0;
+    padding: 5px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+.social ul {
+    justify-content: center;
+}
+footer .copy {
+    font-weight: 700;
+    color: #b7b7b7;
+    margin-bottom: 5px;
+}
+.foot-para {
+    color: #b7b7b7;
+    font-size: 12px;
+}
+
+/* media Query */
+@media(max-width:1024px) {
+    .selectors {
+        width: 70%;
+        transform: translateX(10em);
+    }
+}
+@media(max-width:1023px) {
+    .hero-img img {
+        display: none;
+    }
+
+    .media-img img {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        display: block;
+    }
+    .navbar-brand img {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: auto;
+        display: flex;
+    }
+     form i {
+        display: none;
+    }
+    .showcase form .form-control {  
+        font-size: 13px;
+        border: none;
+        width: 350px;
+        height: 35px;
+        margin-top: 40px;
+    }
+    .selectors {
+        display: none;
+    }
+    .showcase-text h1 {
+        font-size: 25px;
+        font-weight: 400;
+    }
+
+    .showcase-text h1 span {
+        font-size: 3rem;
+        font-weight: 800;
+        letter-spacing: 2px;
+    }
+    nav {
+        border-bottom: none;
+    }
+    nav form .form-control {
+        display: none;
+    }
+}
+
+@media(max-width:992px) {
+    .places img {
+        width: 100%;
+    }
+    .gift .view-btn {
+        
+        transform: translateX(17rem);
+    }
+}
+@media(max-width:912px) {
+    .package .booking img {
+        margin-bottom: 9rem;
+    }
+    .package-text {
+        transform: translateY(-10rem);
+        margin-left: 3rem;
+    }
+}
+@media(max-width:820px) {
+    .package .booking img {
+        margin-bottom: 9rem;
+    }
+    .package-text {
+        transform: translateY(-10rem);
+        margin-left: 3rem;
+    }
+}
+@media(max-width:768px) {
+    .gift .view-btn {
+        
+        transform: translateX(18rem);
+    }
+}
+@media(max-width:576px) {
+    .escape h2::after {
+        transform: translateX(14rem);
+    }
+    .package-text {
+        position: absolute;
+        margin-top: -20rem;
+        transform: translateX(2rem);
+        line-height: .9;
+    }
+    .package-text .percentage-rate {
+        font-weight: bold;
+    }
+    .package-text .upto {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    .package-text .rate-of-percentage {
+        font-size: 7rem;
+        font-weight: bold;
+    }
+    .package-text .percentage-sign {
+        font-size: 5rem;
+    }
+    .package-text .off-text {
+        font-size: 3rem;
+    }
+    .package-text .holiday {
+        font-size: 30px;
+        font-weight: bold;
+        color: #f4f4f4;
+        letter-spacing: 3.84px;
+    }
+    .gift .view-btn {
+        
+        transform: translateX(6rem);
+    }
+}
+@media(max-width:540px) {
+    .package .booking img {
+        margin-bottom: 2rem;
+    }
+    .package-text {
+        transform: translateY(-5rem);
+        margin-left: 3rem;
+    }
+    .package-text .rate-of-percentage {
+        font-size: 9rem;
+        font-weight: bold;
+    }
+    .paradise-text h6::after {
+        margin-left: 15rem;
+    }
+    .paradise-list {
+        margin-left: 6rem;
+    }
+    .gift .view-btn {
+        
+        transform: translateX(12rem);
+    }
+}
+@media(max-width: 500px) {
+    .places .view-btn {
+        width: 80px;
+    }
+    footer i {       
+        margin: 0 5px;
+    }
+    .menu-btn {
+        display: block;
+        cursor: pointer;
+    }
+    .menu-btn i {
+        color: #fff;
+    }
+    .nav-list {
+        position: fixed;
+        display: block;
+        z-index: 10;
+        padding-top: 80px;
+        width: 100%;
+        height: 50%;
+        top: 0;
+        left: 0;
+        transform: translateY(-500px);
+        background: #f4f4f4;
+        transition: all .3s ease-in-out;
+    }
+    .nav-list a {
+        text-decoration: none;
+        color: #2e343d;
+    }
+    .nav-list a:hover {
+        color: #ff5300;
+    }
+    .nav-list.active {
+        transform: translateY(-20px);
+    }
+    .nav-list .close-btn {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        top: 40px;
+        left: 30px;
+        color: #333;
+    }
+}
+@media(max-width:414px) {
+    .escape h2::after {
+        transform: translateX(10rem);
+    }
+    .places .name {
+        font-size: 12px;
+        margin-left: -50px;
+    }
+    .paradise-text h6::after {
+        margin-left: 10rem;
+    }
+    .paradise-list {
+        margin-left: 20px;
+    }
+}
+@media(max-width:412px) {
+    .package-text {
+        margin-top: -16rem;
+    }
+    .package-text .holiday {
+        font-size: 20px;
+    }
+    .package-text .upto {
+        font-size: 2rem;
+    }
+    .gift .view-btn {
+        
+        transform: translateX(8rem);
+    }
+}
+@media(max-width:375px) {
+    .escape h2::after {
+        transform: translateX(9rem);
+    }
+    .places .name {
+        font-size: 12px;
+        margin-left: -50px;
+    }
+    .paradise-text h6::after {
+        margin-left: 10rem;
+    }
+    .paradise-list {
+        margin-left: 20px;
+    }
+}
+@media(max-width: 360px) {
+    .package-text {
+        margin-top: -18rem;
+    }
+    .package-text .upto {
+        font-size: 2rem;
+    }
+    .package-text .rate-of-percentage {
+        font-size: 6rem;
+        font-weight: bold;
+    }
+    .package-text .percentage-sign {
+        font-size: 3rem;
+    }
+    .package-text .off-text {
+        font-size: 2.5rem;
+    }
+    .package-text .holiday {
+        font-size: 20px;
+    }
+}
+@media(max-width: 350px) {
+    .showcase-text h1 {
+        font-size: 23px;
+    }
+
+    .showcase-text h1 span {
+        font-size: 2.5rem;
+    }
+    .package-text {
+        margin-top: -16rem;
+    }
+    .package-text .upto {
+        font-size: 2rem;
+    }
+    .package-text .rate-of-percentage {
+        font-size: 6rem;
+        font-weight: bold;
+    }
+    .package-text .percentage-sign {
+        font-size: 3rem;
+    }
+    .package-text .off-text {
+        font-size: 2.5rem;
+    }
+    .package-text .holiday {
+        font-size: 20px;
+    }
+    .places .name {
+        font-size: 12px;
+        margin-left: -5rem;
+    }
+}
+@media(max-width: 280px) {
+    .escape h2::after {
+        transform: translateX(6rem);
+    }
+    .package-text {
+        margin-top: -10rem;
+    }
+    .package-text .upto {
+        font-size: 1rem;
+    }
+    .package-text .rate-of-percentage {
+        font-size: 5rem;
+    }
+    .package-text .percentage-sign {
+        font-size: 2rem;
+    }
+    .package-text .off-text {
+        font-size: 2rem;
+    }
+    .package-text .holiday {
+        font-size: 15px;
+    }
+    .package-text button {
+        font-size: 14px;
+    }
+    .places img {
+        width: 100%;
+    }
+    .places .name {
+        font-size: 10px;
+        margin-left: -10rem;
+    }
+    .paradise h2::after {
+        margin-left: 2rem;
+    }
+    .paradise-text h6::after {
+        margin-left: 7rem;
+    }
+    .paradise-list {
+        margin-left: 0;
+    }
+    .gift .view-btn {
+        
+        transform: translateX(4rem);
+    }
+}
